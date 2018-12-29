@@ -11,15 +11,19 @@
 		24894E4921D7BA79005C201F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24894E4821D7BA79005C201F /* ViewController.swift */; };
 		24894E4C21D7BA79005C201F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24894E4A21D7BA79005C201F /* Main.storyboard */; };
 		24894E4E21D7BA7B005C201F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24894E4D21D7BA7B005C201F /* Assets.xcassets */; };
+		31ED9CE536299E228A717949 /* Pods_TVVLCPlayerTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E68510471A738D3108395F4 /* Pods_TVVLCPlayerTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1239B237308AA6827A4AACD5 /* Pods-TVVLCPlayerTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVVLCPlayerTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVVLCPlayerTest/Pods-TVVLCPlayerTest.release.xcconfig"; sourceTree = "<group>"; };
 		24894E4321D7BA79005C201F /* TVVLCPlayerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVVLCPlayerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24894E4621D7BA79005C201F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24894E4821D7BA79005C201F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		24894E4B21D7BA79005C201F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24894E4D21D7BA7B005C201F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24894E4F21D7BA7B005C201F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AF350249567781CEAA27538 /* Pods-TVVLCPlayerTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVVLCPlayerTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVVLCPlayerTest/Pods-TVVLCPlayerTest.debug.xcconfig"; sourceTree = "<group>"; };
+		8E68510471A738D3108395F4 /* Pods_TVVLCPlayerTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVVLCPlayerTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31ED9CE536299E228A717949 /* Pods_TVVLCPlayerTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,8 @@
 			children = (
 				24894E4521D7BA79005C201F /* TVVLCPlayerTest */,
 				24894E4421D7BA79005C201F /* Products */,
+				7C1027091E004F799C3720B1 /* Pods */,
+				330E8B0426131842C2E86C2F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +68,23 @@
 			path = TVVLCPlayerTest;
 			sourceTree = "<group>";
 		};
+		330E8B0426131842C2E86C2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E68510471A738D3108395F4 /* Pods_TVVLCPlayerTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C1027091E004F799C3720B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AF350249567781CEAA27538 /* Pods-TVVLCPlayerTest.debug.xcconfig */,
+				1239B237308AA6827A4AACD5 /* Pods-TVVLCPlayerTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,9 +92,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24894E5221D7BA7B005C201F /* Build configuration list for PBXNativeTarget "TVVLCPlayerTest" */;
 			buildPhases = (
+				D00441F65DC38472E424C02F /* [CP] Check Pods Manifest.lock */,
 				24894E3F21D7BA79005C201F /* Sources */,
 				24894E4021D7BA79005C201F /* Frameworks */,
 				24894E4121D7BA79005C201F /* Resources */,
+				BD7B265B09E4081E8E151C5F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +151,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BD7B265B09E4081E8E151C5F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TVVLCPlayerTest/Pods-TVVLCPlayerTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TVVLCPlayer/TVVLCPlayer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TVVLCPlayer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVVLCPlayerTest/Pods-TVVLCPlayerTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D00441F65DC38472E424C02F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TVVLCPlayerTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		24894E3F21D7BA79005C201F /* Sources */ = {
@@ -266,6 +339,7 @@
 		};
 		24894E5321D7BA7B005C201F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AF350249567781CEAA27538 /* Pods-TVVLCPlayerTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -285,6 +359,7 @@
 		};
 		24894E5421D7BA7B005C201F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1239B237308AA6827A4AACD5 /* Pods-TVVLCPlayerTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

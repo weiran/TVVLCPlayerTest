@@ -1,0 +1,29 @@
+PODS:
+  - TVVLCKit (3.2.0)
+  - TVVLCPlayer (1.1.0):
+    - TVVLCKit
+
+DEPENDENCIES:
+  - TVVLCPlayer (from `https://github.com/kodlian/TVVLCPlayer.git`, tag `1.1.1`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - TVVLCKit
+
+EXTERNAL SOURCES:
+  TVVLCPlayer:
+    :git: https://github.com/kodlian/TVVLCPlayer.git
+    :tag: 1.1.1
+
+CHECKOUT OPTIONS:
+  TVVLCPlayer:
+    :git: https://github.com/kodlian/TVVLCPlayer.git
+    :tag: 1.1.1
+
+SPEC CHECKSUMS:
+  TVVLCKit: 8dbd6e0b9cc4dc40676128981823c25dbc1b5afa
+  TVVLCPlayer: 8861d14a3f594d4073c9210e7678ebd3d650f697
+
+PODFILE CHECKSUM: cc17a38965b81aab5cfc7bacf8d49ac5f6856a3b
+
+COCOAPODS: 1.5.3
